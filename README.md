@@ -109,7 +109,93 @@ AI systems interacting with this project must:
 - v0.3+ may explore controlled execution gates
 - No version may remove or weaken the authority model
 
+------
+
+## v0.2 – Visual Workflow Layer (Design Only)
+
+### Purpose
+
+v0.2 introduces a **visual workflow design layer** that allows humans to
+compose application logic, data flow, and AI-assisted transformations
+using a node-based interface.
+
+This layer is **representational only**. It describes intent.
+It does not execute, deploy, or self-modify.
+
 ---
+
+### Conceptual Inspiration (Non-Dependent)
+
+This layer conceptually combines:
+- **n8n** → node-based workflows and explicit data flow
+- **Replit** → project-centric thinking and instant iteration
+- **Lovable** → AI-assisted generation with human intent preserved
+
+No external systems are required, referenced, or assumed.
+
+---
+
+### Core Components (Design Only)
+
+#### 1. Workflow Graph
+- Directed graph of nodes and edges
+- Nodes represent *intent* (not actions)
+- Fully inspectable and serializable
+
+#### 2. Node Types (Conceptual)
+- Input nodes (events, user intent, data)
+- Transformation nodes (logic, mapping, AI suggestions)
+- Output nodes (design artifacts, specifications)
+
+No node may perform side effects.
+
+---
+
+#### 3. AI Co-Designer (Bounded)
+- May suggest nodes, connections, or refinements
+- Cannot add nodes autonomously
+- Cannot modify workflows without Justin approval
+- Cannot execute workflows
+
+---
+
+#### 4. Authority Gate
+- All workflow changes require explicit human confirmation
+- Justin remains the sole authority
+- No background mutation or optimization is allowed
+
+---
+
+### Explicit Non-Goals (v0.2)
+
+- ❌ No execution engine
+- ❌ No background processing
+- ❌ No self-triggering workflows
+- ❌ No external integrations
+- ❌ No runtime assumptions
+- ❌ No persistence guarantees
+
+If a workflow appears to “run,” it violates scope.
+
+---
+
+### Why This Exists
+
+This layer exists to:
+- Make system intent visible
+- Prevent hidden behavior
+- Allow reasoning about systems *before* they exist
+- Enable powerful creation **without surrendering control**
+
+---
+
+### Status
+
+- **Design only**
+- **Not implemented**
+- **Not executable**
+- **Frozen until explicitly advanced by Justin**
+
 
 ## Summary
 
